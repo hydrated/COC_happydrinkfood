@@ -18,7 +18,8 @@ window.fbAsyncInit = function() {
 
 function findID(){
   FB.login(function(response){
-    if (response.status == "connect"){
+    console.log(response);
+    if (response.status == "connected"){
       FB.api("/me", function(response){
         console.log(response);
       });
