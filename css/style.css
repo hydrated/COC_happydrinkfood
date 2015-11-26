@@ -64,5 +64,17 @@ table {
   height: 50px;
   background-color: #f4c871;
   font-family: Sigmar One, serif;
-  text-align: center;
+  vertical-align: top;
+}
+
+.logoImage{
+  float:left;
+  /*border:5px solid black;*/
+}
+
+.clubTitle{
+  /*float:left;
+  width:800px;
+  height:200px;
+  border:1px solid black;*/
 }
