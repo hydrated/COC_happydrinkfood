@@ -15,8 +15,16 @@ window.fbAsyncInit = function() {
  }(document, 'script', 'facebook-jssdk'));
 
 
+
 function findID(){
-  FB.api("/me", function(response){
-    console.log(response);
+  FB.login(function(response){
+    if (response.status == "connect"){
+      FB.api("/me", function(response){
+        console.log(response);
+      });
+    } else {
+      console.log("connect fall");
+    }
   });
+  
 }
