@@ -17,6 +17,6 @@ window.fbAsyncInit = function() {
 
 function findID(){
   FB.api("/me", function(response){
-    console.log();
+    console.log(response);
   });
 }
