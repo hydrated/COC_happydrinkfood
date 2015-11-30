@@ -13,19 +13,3 @@ window.fbAsyncInit = function() {
    js.src = "//connect.facebook.net/zh_TW/sdk.js";
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
-
-
-
-// function findID(){
-//   FB.login(function(response){
-//     console.log(response);
-//     if (response.status == "connected"){
-//       FB.api("/me", function(response){
-//         console.log(response);
-//       });
-//     } else {
-//       console.log("connect fall");
-//     }
-//   });
-  
-// }
